@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASIYA'S SPACECRAFT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/icon" href="images/AE.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+        
+        <style>
+          /* Portfolio Section */
+.portfolio-section {
+  /* background-color: #f8f5f0; */
+  padding: 6rem 2rem;
+}
+
+.portfolio-heading {
+  font-family: 'Georgia', serif;
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-subtext {
+  font-size: 1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.portfolio-subtext em {
+  font-style: italic;
+}
+
+.portfolio-subtext a {
+  color: #8a6d46;
+  text-decoration: underline;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-item {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+.portfolio-item:hover {
+  transform: translateY(-5px);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+}
+
+.portfolio-caption {
+  font-family: 'Georgia', serif;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  color: #2d2d2d;
+  letter-spacing: 0.5px;
+}
+.portfolio-btn {
+  padding: 0.75rem 2rem;
+  background-color: #eeece7; /* soft beige tone */
+  color: #1a1a1a; /* dark elegant text */
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.portfolio-btn:hover {
+  background-color: #e2e0db;
+  color: blue;
+  text-decoration: none;
+}
+
+        </style>
+
+    </head>
+    <body>
+        <header class="text-center">
+            <a href="index.html"><img src="images/AE_resized_icon.png" alt="aslogo"> </a> 
+             <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ASIYA'S SPACECRAFT</h1>
+             <p><em>LEXURY WEDDING & EVENT PLANNING</em></p>
+        </header>
+ 
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">ELEGANT EVENTS</a>
+        
+            <!-- Toggle Button visible only on small screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+              </ul>
+            </div>
+        
+            <!-- Offcanvas Mobile Menu -->
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                  <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- portfolio section -->
+        <section class="portfolio-section">
+          <div class="container text-center">
+            <h2 class="portfolio-heading">Our work <em>sets the stage</em> for your celebration.</h2>
+            <p class="portfolio-subtext">
+              <em>Every wedding is different</em>—but our portfolio showcases the type of 
+              experiences we help our clients create.</a>
+            </p>
+        
+            <div class="portfolio-grid">
+              <a href="portfolio/chloe-max.html" class="portfolio-item">
+                <img src="images/picnicportfo.jpg" alt="Picnic" />
+                <p class="portfolio-caption">Fatima having a beautiful Picnic with Nature</p>
+              </a>
+              <a href="portfolio/andi-noah.html" class="portfolio-item">
+                <img src="images/weddingport.jpg" alt="wedding" />
+                <p class="portfolio-caption">ANDI + NOAH happily ever after</p>
+              </a>
+              <a href="portfolio/nicole-chris.html" class="portfolio-item">
+                <img src="images/intimategathering.jpg" alt="gathering" />
+                <p class="portfolio-caption">Rose and Friends celebrating years of friendship</p>
+              </a>
+              <a href="portfolio/dalia-idris.html" class="portfolio-item">
+                <img src="images/luxuryport.jpg" alt="luxury" />
+                <p class="portfolio-caption">Company board members having a serene and casual meeting</p>
+              </a>
+              <a href="portfolio/simi-tari.html" class="portfolio-item">
+                <img src="images/birthdayport.jpg" alt="birthday" />
+                <p class="portfolio-caption">Precious celebrates birthday with loved ones, beautiful moment!</p>
+              </a>
+              <a href="portfolio/alma-nabil.html" class="portfolio-item">
+                <img src="images/colleagues.jpg" alt="colleagues" />
+                <p class="portfolio-caption">Colleagues Hangout Day</p>
+              </a>
+            </div>
+          </div>
+         <div class="mt-5 text-center"><button class="portfolio-btn">Let's Schedule Your Event &rarr;</button></div> 
+        </section>
+        
+    
+
+        <footer class="footer mt-5 text-dark">
+            <div class="container py-5">
+              <div class="row">
+          
+                <!-- Logo & Brief -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                  <img src="images/AE_resized_icon.png" alt="Asiyah's Spacecraft Logo" style="height: 60px;">
+                  <p class="mt-3">Creating timeless memories, tailored to you. Let us bring your dream celebration to life.</p>
+                </div>
+          
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4 text-center">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="plan.html">Schedule</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Contact & Socials -->
+                <div class="col-md-4 text-center text-md-end">
+                  <h5>Get in Touch</h5>
+                  <p>Email: asiyahspacecraft@gmail.com<br>Phone: +234 810 015 1180</p>
+                  <div class="social-icons mt-2">
+                    <a href="https://m.facebook.com"><img src="images/facebook.svg" alt="Facebook" class="me-2"></a>
+                    <a href="https://www.instagram.com/asiyas_spaces/"><img src="images/instagram.svg" alt="Instagram" class="me-2"></a>
+                    <a href="https://x.com/i/flow/login"><img src="images/x-twitter.svg" alt="Twitter"></a>
+                  </div>
+                </div>
+          
+              </div>
+              <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2);">
+              <p class="text-center mb-0">&copy; 2025 Asiyah’s Spacecraft. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <Script src="javs.js"></Script>
+    </body>
+</html>

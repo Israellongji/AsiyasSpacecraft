@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASIYA'S SPACECRAFT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/icon" href="images/AE.svg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+        .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease;
+        }
+
+        .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+.services-hero {
+  background-image: url('images/services-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 100vh;
+}
+
+.hero-overlay {
+  /* background: rgba(144, 136, 136, 0.442); */
+  padding: 3rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 5rem 1rem;
+    height: auto;
+  }
+
+  .hero-overlay {
+    padding: 2rem;
+  }
+}
+
+
+/* Services Section */
+.services-section {
+  padding: 4rem 2rem;
+  /* background-color: #fdf7f2; */
+  text-align: center;
+}
+
+.services-section .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-section h2 {
+  font-size: 2.8rem;
+  font-family: 'Georgia', serif;
+  margin-bottom: 3rem;
+  color: #2d2d2d;
+}
+
+/* Service Grid */
+.service-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Individual Service Cards */
+.service-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 300px;
+  width: 100%;
+  transition: transform 0.3s ease;
+  background-color: #fdf7f2;
+
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-content h3 {
+  font-family: 'Georgia', serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.service-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .service-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services-section h2 {
+    font-size: 2rem;
+  }
+
+  .service-card {
+    max-width: 90%;
+  }
+}
+
+.why-choose-us, .cta-section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #fff;
+}
+
+.cta-section .btn {
+  /* background: #fbd5b6; #b89c7f */
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.cta-section .btn:hover {
+  background-color: #fbd5b6;
+}
+#serve button:hover {
+  background-color: #fbd5b6;
+}
+
+</style>
+
+  </head>
+  <body>
+
+      <header class="text-center">
+        <a href="index.html"> <img src="images/AE_resized_icon.png" alt="aslogo"> </a>
+         <h1>ASIYA'S SPACECRAFT</h1>
+         <p><em>LEXURY WEDDING & EVENT PLANNING</em></p>
+     </header>
+
+     
+     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">ELEGANT EVENTS</a>
+    
+        <!-- Toggle Button visible only on small screens -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Desktop Menu -->
+        <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+            <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+            <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+          </ul>
+        </div>
+    
+        <!-- Offcanvas Mobile Menu -->
+        <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+              <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+              <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+              <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+<!-- Services Hero -->
+<section class="services-hero" style="background-image: url(images/sure.jpg);">
+  <div class="hero-overlay">
+    <h1>Our Signature Services</h1>
+  </div>
+</section>
+
+<!-- Services Grid -->
+ 
+<section  id="serviceimmediately" class="services-section">
+  <div class="container">
+    <h2>Tailored experiences, curated with excellence</h2>
+    <div class="service-grid">
+      
+      <div class="service-card">
+        <img src="images/fullevent.jpg" alt="Full Service Planning" class="service-image">
+        <div class="service-content">
+          <h3>Full-Service Event Planning</h3>
+          <p>From concept to execution, we handle every element of your event with expertise, elegance, and precision.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/wedding-setting.jpg" alt="Wedding Design" class="service-image">
+        <div class="service-content">
+          <h3>Luxury Wedding Design</h3>
+          <p>Custom-tailored wedding experiences that capture your love story in a timeless, beautiful celebration.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/intimate.jpg" alt="Intimate Gatherings" class="service-image">
+        <div class="service-content">
+          <h3>Intimate Gatherings</h3>
+          <p>Exquisite attention to detail and personalized service for small, unforgettable events.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/corporate.jpg" alt="Corporate Events" class="service-image">
+        <div class="service-content">
+          <h3>Corporate Experiences</h3>
+          <p>Flawless planning and luxurious styling for brand activations, galas, and executive retreats.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+          <img src="images/picnic.jpg" alt="Luxury Picnics" class="service-image">
+          <div class="service-content">
+            <h3>Luxury Picnics</h3>
+            <p>Flawless planning and luxurious styling for brand activations, galas, and executive retreats.</p>
+          </div>
+        </div>
+
+          <!-- Other Services -->
+        <div id="serve" class="service-card">
+          <img src="images/others.jpg" alt="Other Services" class="service-image">
+          <div class="service-content">
+          <h3>Other Services</h3>
+          <P>We have many more services and you can view them</P>
+          <button id="showServices" class="btn btn-dark">View Other Services</button>
+          <ul id="serviceList" class="list-group"></ul>
+          </div>
+        </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-choose-us">
+  <h2>Why Choose Asiyah’s Spacecraft?</h2>
+  <p>We blend creativity, elegance, and flawless execution to create unforgettable experiences.</p>
+</section>
+
+
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <h2>Let’s Start Planning Something Magical!</h2>
+  <a href="schedule.html" class="btn btn-dark">Start Planning</a>
+</section>
+
+<footer class="footer mt-5 text-dark">
+  <div class="container py-5">
+    <div class="row">
+
+      <!-- Logo & Brief -->
+      <div class="col-md-4 mb-4 text-center text-md-start">
+        <img src="images/AE_resized_icon.png" alt="Asiyah's Spacecraft Logo" style="height: 60px;">
+        <p class="mt-3">Creating timeless memories, tailored to you. Let us bring your dream celebration to life.</p>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-md-4 mb-4 text-center">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Socials -->
+      <div class="col-md-4 text-center text-md-end">
+        <h5>Get in Touch</h5>
+        <p>Email: asiyahspacecraft@gmail.com<br>Phone: +234 810 015 1180</p>
+        <div class="social-icons mt-2">
+          <a href="https://m.facebook.com"><img src="images/facebook.svg" alt="Facebook" class="me-2"></a>
+          <a href="https://www.instagram.com/asiyas_spaces/"><img src="images/instagram.svg" alt="Instagram" class="me-2"></a>
+          <a href="https://x.com/i/flow/login"><img src="images/x-twitter.svg" alt="Twitter"></a>
+        </div>
+      </div>
+
+    </div>
+    <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2);">
+    <p class="text-center mb-0">&copy; 2025 Asiyah’s Spacecraft. All rights reserved.</p>
+  </div>
+</footer>
+
+        
+
+
+      <script src="javs.js"></script>
+    </body>
+</html>

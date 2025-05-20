@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASIYA'S SPACECRAFT</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/icon" href="images/AE.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+  <style>
+    /* FAQ Hero Section */
+.faq-hero {
+  background-image: url(images/event2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.faq-hero .hero-overlay {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 3rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 4rem 2rem;
+  /* background-color: #f8f5f0; */
+}
+
+.faq-section .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background-color: white;
+  border-left: 4px solid #fef6ef;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.faq-item h3 {
+  margin-bottom: 0.5rem;
+  font-family: 'Georgia', serif;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.faq-item p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accordion-item {
+  border: 1px solid #e2dcd3;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  background-color: white;
+}
+
+.accordion-header {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Georgia', serif;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  text-align: left;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.accordion-header .icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.accordion-header:hover {
+  background-color: #f1ece6;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5rem;
+  color: #555; 
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+.accordion-item.active .accordion-body {
+  max-height: 300px;   /* Adjust as needed */
+  padding: 1rem 1.5rem;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <header class="text-center">
+           <a href="index.html"><img src="images/AE_resized_icon.png" alt="aslogo"> </a> 
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;">ASIYA'S SPACECRAFT</h1>
+            <p><em>LEXURY WEDDING & EVENT PLANNING</em></p>
+        </header>
+
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">ELEGANT EVENTS</a>
+        
+            <!-- Toggle Button visible only on small screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+              </ul>
+            </div>
+        
+            <!-- Offcanvas Mobile Menu -->
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                  <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+
+  
+  <!-- Hero Section -->
+  <section class="faq-hero">
+    <div class="hero-overlay">
+      <h1>Frequently Asked Questions</h1>
+      <p>Your questions answered with clarity and elegance.</p>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <div class="container">
+      <h2>We’ve Got Answers</h2>
+  
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">What services do you offer? <span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>We provide full-service event planning, including wedding planning, corporate events, private parties, and destination event coordination.</p>
+          </div>
+        </div>
+  
+        <div class="accordion-item">
+          <button class="accordion-header">How far in advance should we book?<span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>We recommend booking 6–12 months in advance to secure your preferred date and allow enough time for personalized planning.</p>
+          </div>
+        </div>
+  
+        <div class="accordion-item">
+          <button class="accordion-header">Do you offer destination event planning?<span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Yes, we specialize in destination events across Nigeria and beyond. Our team handles everything from travel logistics to local vendor coordination.</p>
+          </div>
+        </div>
+  
+        <div class="accordion-item">
+          <button class="accordion-header">Can I customize my event experience?<span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Absolutely. Every event is tailor-made to reflect your style, personality, and preferences. We believe in turning visions into reality.</p>
+          </div>
+        </div>
+  
+        <div class="accordion-item">
+          <button class="accordion-header">How do I get started?<span class="icon">+</span></button>
+          <div class="accordion-body">
+            <p>Simply reach out via our <a href="schedule.html">Schedule Page</a> , and we’ll schedule a consultation to begin the journey.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer mt-5 text-dark">
+    <div class="container py-5">
+      <div class="row">
+  
+        <!-- Logo & Brief -->
+        <div class="col-md-4 mb-4 text-center text-md-start">
+          <img src="images/AE_resized_icon.png" alt="Asiyah's Spacecraft Logo" style="height: 60px;">
+          <p class="mt-3">Creating timeless memories, tailored to you. Let us bring your dream celebration to life.</p>
+        </div>
+  
+        <!-- Navigation Links -->
+        <div class="col-md-4 mb-4 text-center">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact & Socials -->
+        <div class="col-md-4 text-center text-md-end">
+          <h5>Get in Touch</h5>
+          <p>Email: asiyahspacecraft@gmail.com<br>Phone: +234 810 015 1180</p>
+          <div class="social-icons mt-2">
+            <a href="https://m.facebook.com"><img src="images/facebook.svg" alt="Facebook" class="me-2"></a>
+            <a href="https://www.instagram.com/asiyas_spaces/"><img src="images/instagram.svg" alt="Instagram" class="me-2"></a>
+            <a href="https://x.com/i/flow/login"><img src="images/x-twitter.svg" alt="Twitter"></a>
+          </div>
+        </div>
+  
+      </div>
+      <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2);">
+      <p class="text-center mb-0">&copy; 2025 Asiyah’s Spacecraft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+     const headers = document.querySelectorAll(".accordion-header");
+
+headers.forEach(header => {
+  header.addEventListener("click", () => {
+    const item = header.parentElement;
+    const icon = header.querySelector(".icon");
+    const openItem = document.querySelector(".accordion-item.active");
+
+    if (openItem && openItem !== item) {
+      openItem.classList.remove("active");
+      openItem.querySelector(".icon").textContent = "+";
+    }
+
+    const isActive = item.classList.toggle("active");
+    icon.textContent = isActive ? "–" : "+";
+  });
+});
+  </script>
+        <Script src="javs.js"></Script>
+  
+</body>
+</html>

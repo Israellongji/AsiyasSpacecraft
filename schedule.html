@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ASIYA'S SPACECRAFT</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/icon" href="images/AE.svg">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap" rel="stylesheet">
+      <style>
+        .plan-section {
+        background-color: #f6f4f1;
+        font-family: 'Georgia', serif;
+        color: #2e2e2e;
+      }
+      .plan-hero {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .plan-hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .hero-text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        padding: 2rem;
+        background: rgba(0, 0, 0, 0.2); /* Optional: dark overlay for readability */
+        border-radius: 1rem;
+      }
+
+      .hero-text-overlay h1 {
+        font-size: 2.5rem;
+        font-family: 'Georgia', serif;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero-text-overlay p {
+        font-size: 1.2rem;
+      }
+      
+      .plan-text {
+        background-color: #ffffff;
+      }
+      
+      .plan-form-wrap {
+        background-color: #f0ede8;
+      }
+      
+      .plan-text h2 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+      
+      .plan-text p,
+      .plan-text address {
+        font-size: 15px;
+        line-height: 1.7;
+      }
+      
+      .plan-form {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      .plan-form h5 {
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        border-bottom: 1px solid #bbb;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+      }
+      
+      .plan-form .form-control {
+        border-radius: 0;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        padding: 10px;
+      }
+      
+      .plan-form .form-check {
+        margin-bottom: 10px;
+      }
+      
+      .plan-btn {
+        /* background-color: #a694ff */
+        border-color: #a694ff;
+      }
+      .plan-btn:hover {
+        background-color: #fdf7f2;
+      }  
+      .plan-hero img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      display: block;
+      }
+
+      .footer {
+      /* background-color: #1f1f1f; */
+      background-color: #fdf7f2;
+      /* color: #fff; */
+      color: #1f1f1f;
+      font-family: 'Cormorant Garamond', serif;
+      }
+
+    .footer a {
+      /* color: #e2e0db; */
+      color: #1f1f1f;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      /* color: #fff; */
+      color: #fbd5b6;
+      text-decoration: underline;
+    }
+
+    .footer h5 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .footer ul {
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer .social-icons img {
+      width: 24px;
+      height: 24px;
+      /* filter: brightness(0) invert(1); */
+      transition: transform 0.3s ease;
+    }
+
+    .footer .social-icons img:hover {
+      transform: scale(1.1);
+    }
+
+    </style>
+
+      </head>
+    <body>
+        <header class="text-center">
+           <a href="index.html"> <img src="images/AE_resized_icon.png" alt="aslogo"> </a>
+            <h1>ASIYA'S SPACECRAFT</h1>
+            <p><em>LEXURY WEDDING & EVENT PLANNING</em></p>
+        </header>
+
+       
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+          <div class="container">
+            <a class="navbar-brand" href="#">ELEGANT EVENTS</a>
+        
+            <!-- Toggle Button visible only on small screens -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Desktop Menu -->
+            <div class="collapse navbar-collapse d-none d-lg-flex" id="desktopMenu">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+              </ul>
+            </div>
+        
+            <!-- Offcanvas Mobile Menu -->
+            <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="mobileMenu">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                  <li class="nav-item"><a class="nav-link" href="services.html">SERVICES</a></li>
+                  <li class="nav-item"><a class="nav-link" href="FAQ.html">FAQ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+                  <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+          <section id="plan">
+            <!-- TOP HERO IMAGE -->
+            <div class="plan-hero">
+              <img src="images/luxurious.jpg" alt="Event Planning Hero" class="img-fluid w-100">
+              <div class="hero-text-overlay">
+                <h1>At Your Service!</h1>
+                <p>You Are One Step Ahead Of Making Your Dream Event Come True</p>
+              </div>
+            </div>
+          
+            <!-- TEXT + FORM SECTION -->
+            <div class="plan-section">
+              <div class="container-fluid">
+                <div class="row g-0">
+                  <!-- LEFT: TEXT INFO -->
+                  <div id="scheduleimmediately" class="col-md-6 plan-text align-items-center">
+                    <div class="p-5">
+                      <h2 class=" px-5 text-fluid" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;">Tell us a little about yourself & the event you’re hosting.</h2>
+                      <p style="font-size: 20px;" class="py-5 px-5">As a luxury event company, we accept a limited number of weddings and events per year to maintain the highest level of service for our clients. Please inquire for detailed pricing and our Scottsdale wedding planners will gladly respond to your request.</p>
+                      <p style="font-size: 20px;" class="px-5">Whether you're looking to host a one-of-a-kind wedding in Abuja, Lagos, Jos  or elsewhere, our team of luxury event designers and the best event & wedding planners will ensure your vision is flawlessly executed. Please provide your contact information and any other details you want to share. Or, if you prefer, email us for an appointment with a destination wedding specialist at:<a href="mailto:hello@asiyahspacecraft.com">hello@asiyahspacecraft.com</a>.</p>
+                      <address style="font-size: 20px;" class="py-5 px-5">
+                        Office Address:<br>
+                        123 Gimbiya Street<br>
+                        Suite 456<br>
+                        Abuja, NG<br>
+                        <em>By Appointment Only</em>
+                      </address>
+                    </div>
+                  </div>
+          
+                  <!-- RIGHT: FORM -->
+                  <div class="col-md-6 plan-form-wrap">
+                    <div class="p-5 plan-form">
+                      <h5 class="mb-4">YOUR INFORMATION</h5>
+                      <form id="contactForm">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <p>First Name</p>
+                            <input type="text" class="form-control" placeholder="First Name">
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <p cla>Last Name</p>
+                            <input type="text" class="form-control" placeholder="Last Name">
+                          </div>
+                        </div>
+                        <div class="mb-3">
+                          <p>Email (required)</p>
+                          <input type="email" class="form-control" placeholder="Email (required)">
+                        </div>
+                        <div class="mb-3">
+                          <p>Phone (required)</p>
+                          <input type="tel" class="form-control" placeholder="Phone (required)">
+                        </div>
+          
+                        <hr class="my-4">
+          
+                        <h5 class="mb-3">WEDDING DETAILS</h5>
+                        <p class="small mb-2">→ Weddings in our portfolio reflect a typical investment of ₦2,000,000+ per guest.</p>
+                        <div class="mb-3">
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> ₦1,500,000 - ₦3,000,000
+                          </label>
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> ₦3,000,000 - ₦5,000,000
+                          </label>
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> ₦5,000,000 and up
+                          </label>
+                        </div>
+          
+                        <hr class="my-4">
+          
+                        <h5 class="mb-3">MORE INFORMATION</h5>
+                        <p class="small mb-2">How did you hear about us? <em>(required)</em></p>
+                        <div class="mb-3">
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> Instgram
+                          </label>
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> X
+                          </label>
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> Facebook
+                          </label>
+                          <label class="form-check">
+                            <input type="checkbox" class="form-check-input"> Referral
+                          </label>
+                        </div>
+
+                        
+                        <div class="mb-3">
+                          <p>If you were referred, please let us know who we can thank</p>
+                          <input type="tel" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="mb-3">
+                          <p>Thank you so much for your inquiry! Is there anything else you want to share, or do you have any specific questions for us?</p>
+                          <textarea class="form-control" rows="4" placeholder="Your Message"></textarea>
+                        </div>
+          
+                        <div class="text">
+                          <button type="submit" class="btn plan-btn">Submit Inquiry</button>
+                        </div>
+
+
+
+                      </form>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+            </div>
+          </section>
+          
+          <footer class="footer mt-5 text-dark">
+            <div class="container py-5">
+              <div class="row">
+          
+                <!-- Logo & Brief -->
+                <div class="col-md-4 mb-4 text-center text-md-start">
+                  <img src="images/AE_resized_icon.png" alt="Asiyah's Spacecraft Logo" style="height: 60px;">
+                  <p class="mt-3">Creating timeless memories, tailored to you. Let us bring your dream celebration to life.</p>
+                </div>
+          
+                <!-- Navigation Links -->
+                <div class="col-md-4 mb-4 text-center">
+                  <h5>Quick Links</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="schedule.html">Contact</a></li>
+                  </ul>
+                </div>
+          
+                 <!-- Contact & Socials -->
+                <div class="col-md-4 text-center text-md-end">
+                  <h5>Get in Touch</h5>
+                  <p>Email: asiyahspacecraft@gmail.com<br>Phone: +234 810 015 1180</p>
+                  <div class="social-icons mt-2">
+                    <a href="https://m.facebook.com"><img src="images/facebook.svg" alt="Facebook" class="me-2"></a>
+                    <a href="https://www.instagram.com/asiyas_spaces/"><img src="images/instagram.svg" alt="Instagram" class="me-2"></a>
+                    <a href="https://x.com/i/flow/login"><img src="images/x-twitter.svg" alt="Twitter"></a>
+                  </div>
+                </div>
+          
+              </div>
+              <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.2);">
+              <p class="text-center mb-0">&copy; 2025 Asiyah’s Spacecraft. All rights reserved.</p>
+            </div>
+          </footer>      
+
+
+          <script>
+            document.getElementById("contactForm").addEventListener("submit", function(event) {
+              event.preventDefault(); // Prevent actual submission
+              alert("Your message has been submitted successfully!");
+              // Optionally, reset the form:
+              this.reset();
+            });
+          </script>
+
+
+      <Script src="javs.js"></Script>
+    </body>
+</html>
