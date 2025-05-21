@@ -12,6 +12,10 @@ body {
   header p {
     margin-bottom: 0;
   }
+ 
+  #mobileMenu {
+    width: 150px;
+  }
 
  
   .hero {
